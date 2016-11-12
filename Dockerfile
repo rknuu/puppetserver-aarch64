@@ -1,4 +1,4 @@
-FROM multiarch/alpine-linux:armhf-edge
+FROM multiarch/alpine:armhf-edge
 
 ARG ARCH=amd64
 
