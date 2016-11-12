@@ -13,5 +13,6 @@ services:
 
 before_install:
   - docker run --rm --privileged multiarch/qemu-user-static:register
-build:
+
+script:
   - docker build -t rknuu/puppetserver-aarch64 .
