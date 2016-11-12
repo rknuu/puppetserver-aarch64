@@ -1,4 +1,6 @@
-FROM container4armhf/armhf-alpine
+FROM multiarch/alpine-linux:armhf-edge
+
+ARG ARCH=amd64
 
 EXPOSE 8080 8140
 

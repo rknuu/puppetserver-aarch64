@@ -13,7 +13,5 @@ services:
 
 before_install:
   - docker run --rm --privileged multiarch/qemu-user-static:register --reset
-  - docker run -it --rm multiarch/alpine:armhf-edge /bin/sh
-  - apk install docker
 script:
   - docker build -t rknuu/puppetserver-aarch64 .
